@@ -32,11 +32,13 @@ jogo/
 ## 🚀 Como Executar
 
 ### Pré-requisitos
+
 - Python 3.8 ou superior instalado
 
 ### Passos para execução
 
 1. **Clone o repositório:**
+
    ```bash
    git clone <url-do-repositorio>
    cd jogo
@@ -61,5 +63,6 @@ jogo/
 Não há dependências externas. O projeto utiliza apenas a biblioteca padrão do Python.
 
 Para desenvolvimento, recomenda-se:
+
 - Python 3.8+
 - Editor de código com suporte a Python (VS Code, PyCharm, etc.)
