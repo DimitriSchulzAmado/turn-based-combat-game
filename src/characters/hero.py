@@ -1,3 +1,4 @@
+import random
 from src.characters.character import Character
 
 
@@ -15,7 +16,7 @@ class Hero(Character):
                 \nSpecial Ability: {self.get_special_ability()}"
 
     def special_attack(self, target):
-        damage = self.get_level() * 5
+        damage = random.randomint(self.get_level() * 5, self.get_level() * 8)
         print(
             f"{self.get_name()} uses special attack on {target.get_name()} for {damage} damage!"
         )

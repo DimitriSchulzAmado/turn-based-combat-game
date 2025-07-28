@@ -1,3 +1,6 @@
+import random
+
+
 class Character:
     def __init__(self, name, health, level):
         self.__name = name
@@ -25,6 +28,6 @@ class Character:
         print(f"{self.get_name()} now has {self.get_health()} health left.")
 
     def attack(self, target):
-        damage = self.__level * 2
+        damage = random.randint(self.get_level() * 2, self.get_level() * 4)
         target.receive_damage(damage)
         print(f"{self.get_name()} attacks {target.get_name()} for {damage} damage!")
